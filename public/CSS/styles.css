@@ -1,0 +1,288 @@
+/* Fonts */
+
+
+/* font-family: 'Nuosu SIL', serif;
+font-family: 'Source Sans Pro', sans-serif; */
+
+
+/* Colors */
+
+
+/*FFE5B4 - Tan-ish
+FFA500 - Orange/Gold
+3A5BA0 - Dark-med-blue Grey
+1F4690 - Dark-blue */
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.big-card {
+    align-items: baseline;
+    background-color: #F2D1D1;
+    display: flex;
+    height: 24rem;
+    justify-content: space-evenly;
+    margin: 1% auto;
+    width: 24rem;
+}
+
+.big-card:hover {
+    box-shadow: 5px 5px 3px black;
+}
+
+body {
+    background-color: #FFE5B4;
+}
+
+.brand {
+    color: #FFA500;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 1%;
+}
+
+.brand-img {
+    height: 50px;
+    margin-right: 2%;
+    width: 50px;
+}
+
+.card {
+    background-color: #F2D1D1;
+    display: inline-block;
+    margin: 1%;
+    width: 24rem;
+}
+
+.card-body {
+    align-items: baseline;
+    background-color: #F2D1D1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3%;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 3px #F7E7CE;
+}
+
+.card-buttons {
+    background-color: black;
+    display: flexbox;
+    margin-right: 0;
+    margin-left: auto;
+    max-height: 100%;
+    position: relative;
+    width: 30%;
+}
+
+.card-btn-area {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: 0;
+    width: 40%;
+}
+
+.card-text-area {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+}
+
+.card-title {
+    color: #3A5BA0;
+}
+
+.centered {
+    display: block;
+    margin: auto;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.central-view {
+    background-color: transparent;
+    border: 1px solid black;
+    margin: 2.5% auto;
+    width: 80%;
+}
+
+.empl-container {
+    background-color: #3A5BA0;
+    border: solid 2px black;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 3%;
+    width: 80%;
+}
+
+.empl-container-inner {
+    align-content: center;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin: auto;
+    /* max-height: 80%; */
+    /* width: 90%; */
+}
+
+.footer {
+    border-top: solid 2px rgb(129, 129, 129);
+}
+
+.footer-text {
+    color: #FFA500;
+    text-align: center;
+}
+
+.form-btn {
+    background-color: #3A5BA0;
+    display: flex;
+    color: #F7E7CE;
+    justify-content: center;
+    margin: 1% auto;
+    width: 20%;
+}
+
+.form-btn:hover {
+    background-color: transparent;
+    box-shadow: 3px 3px 1px #FFA500;
+    text-shadow: 1px 1px 1px #3A5BA0;
+}
+
+.form-title {
+    color: black;
+    font-size: 2rem;
+    /* margin-top: 1%; */
+    margin: 1%;
+    width: 60%;
+}
+
+.lefted {
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.lefted-text {
+    text-align: left;
+}
+
+.login-bottom-container {
+    /* border: solid 1px black; */
+    background-color: white;
+    border: 1px solid rgb(175, 175, 175);
+    height: 2rem;
+    margin: 5% auto;
+    text-align: center;
+    width: 25%;
+}
+
+.login-bottom-container:hover {
+    border-bottom: solid 1px black;
+}
+
+.login-brand {
+    text-align: left;
+}
+
+.login-container {
+    background-color: white;
+    border: 1px solid rgb(175, 175, 175);
+    height: auto;
+    margin: 15% auto 0;
+    text-align: center;
+    width: 40%;
+}
+
+.login-container:hover {
+    box-shadow: 3px 3px 3px black;
+}
+
+.login-container input {
+    background-color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin: .25rem auto;
+    text-align: left;
+    width: 90%;
+}
+
+.login-container input:focus {
+    text-align: center;
+}
+
+.login-container button {
+    background-color: rgb(75, 75, 250);
+    border: solid 2px white;
+    box-shadow: 2px 2px 3px black;
+    color: whitesmoke;
+    height: 3%;
+    margin-top: 3%;
+    width: 45%;
+}
+
+.login-container button:hover {
+    background-color: rgb(24, 0, 92);
+}
+
+.login-inner-container {
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+    width: 80%;
+}
+
+.md-input {
+    width: 40%;
+}
+
+.page-title {
+    color: black;
+    font-size: 3rem;
+    margin: 1% auto;
+    text-align: center;
+    width: 60%;
+}
+
+.radio {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    margin: 0;
+    width: 40%;
+}
+
+.righted {
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.righted-text {
+    text-align: right;
+}
+
+.subtle-text {
+    font-size: .8rem;
+    text-align: left;
+}
