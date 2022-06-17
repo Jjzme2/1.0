@@ -1,4 +1,5 @@
 <cfparam  name="attributes.title" default="">
+<cfparam  name="attributes.showNav" default="true">
 
 <!--- Start Module --->
 <cfif #thistag.executionMode# EQ 'start'>
@@ -25,10 +26,9 @@
         
         <body>
 <!----------------------------------------------------------------       BODY START     ---------------------------------------------------------------->
-            <cfif #attributes.title# NEQ "Login">
                 <nav class="navbar navbar-expand-lg bg-light">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="/Pages/welcome.cfm">
+                        <a class="navbar-brand" href="/Pages/overview.cfm">
                             <img src="/public/pics/microsoft.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
                             Microstuff
                         </a>
@@ -55,7 +55,6 @@
                         </div>
                     </div>
                 </nav>
-            </cfif>
             <div class="central-page">
 <!---------------------------------------------------------------------         Module Close      ----------------------------------------------------------------->
                 <cfelse>

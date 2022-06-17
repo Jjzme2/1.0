@@ -9,13 +9,13 @@
 <!--- Check to continue --->
 <cfif arrayIsEmpty(errorMsg)>
 
-    <cfquery name="qry" datasource="empdeets"> 
+    <cfquery name="qry"> 
         DELETE FROM EmployeeData
         WHERE [EmployeeID]=#form.id#;
     </cfquery>
 
     <cfset formSubmitComplete = true> 
-    <cflocation  url="/Pages/welcome.cfm">
+    <cflocation  url="/Pages/welcome.cfm" addToken = "no">
 </cfif>
 
 </cfif>

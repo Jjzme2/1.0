@@ -11,7 +11,7 @@
 
 
 
-<cfquery name="qry" datasource="empdeets"> 
+<cfquery name="qry"> 
     <!--- 
     --Either * or the optional parameters work, * calls everything. Can be reference by dot notation. [](These are used to help define words that could also be interpreted as keywords) --->
 
@@ -36,8 +36,8 @@
                 <input type="text" name="username" value="#session.recentEmployee.username#" required
                 minlength="2" maxlength="20" size="30em" > 
 
-                <!---
                 
+                                <!---        Check for confirmation          --->
                     <label for="password">Enter new Password</label>                 
                     <input type="password" name="password" value="#session.recentEmployee.password#" required
                     minlength="2" maxlength="20" size="30em" > 
@@ -46,7 +46,7 @@
                     <input type="password" name="confirmPassword" value="#session.recentEmployee.password#" required
                     minlength="2" maxlength="20" size="30em" > 
                 
-                --->
+                
 
 
                 <label for="fName">Enter employee first name</label>                
@@ -78,7 +78,7 @@ use as an attribute.
                     <label for="Female">Female</label>
                     <input type="radio" value="Female" name="gender">
 
-                    <input name='id' value=#session.recentEmployee.EmployeeID# hidden='true'>
+                    <input name='EmployeeID' value=#session.recentEmployee.EmployeeID# hidden='true'>
                 </div>
             </div>
             <button class="btn btn-primary btn-sm" style="margin-bottom: 3%;" name="updateEmp">Submit Updated Employee</button>

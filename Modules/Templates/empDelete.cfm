@@ -1,7 +1,7 @@
 <!-----------------------------------------------------------------    Param Definition      ------------------------------------------------------>
 <cfparam  name="attributes.EmployeeID">
 
-<cfquery name="qry" datasource="empdeets"> 
+<cfquery name="qry"> 
     <!--- 
     --Either * or the optional parameters work, * calls everything. Can be reference by dot notation. [](These are used to help define words that could also be interpreted as keywords) --->
 
@@ -24,9 +24,9 @@
 
                 <h6>* You can go back at any time by clicking the logo at the top left of the page.</h6>
             </div>
-            <input name='id' value=#session.recentEmployee.EmployeeID# hidden='true'>
+            <input name='EmployeeID' value=#session.recentEmployee.EmployeeID# hidden='true'>
             
-            <button class="btn btn-primary btn-sm" style="margin-bottom: 3%;" name="deleteEmp">Terminate</button>
+            <button class="btn btn-primary btn-sm" style="margin-bottom: 3%;" name="deleteEmp">Delete Employee</button>
         </div>
     </form>   
 </cfoutput>

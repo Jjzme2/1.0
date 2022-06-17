@@ -1,3 +1,6 @@
-<cfmodule template="/Modules/CustomTags/centralPage.cfm" title='Get CGI Vars'>
+<!--- Give Admin only access --->
+
+
+<cfmodule template="/Modules/Templates/page.cfm" title='Get CGI Vars'>
 <cfdump var=#cgi# />
 </cfmodule>
